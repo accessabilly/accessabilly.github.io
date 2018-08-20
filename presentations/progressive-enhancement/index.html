@@ -1,11 +1,424 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>progressive enhancement</title>
+	<title>Progressive Enhancement - a Plea for Code Quality by Accessabilly </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/accessabilly/styles/styles.css">
+
+	<link rel="stylesheet" href="shower/themes/accessabilly/highlightjs/styles/monokai-sublime.css">
+	<script src="shower/themes/accessabilly/highlightjs/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </head>
-<body>
-  <main>
-    <h1>soon</h1>
-  </main>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>Progressive Enhancement</h1>
+		<p>What it is. Why we need it.</p>
+	</header>
+
+	<main class="main-content">
+
+		<section class="slide" id="cover">
+			<h2>Progressive Enhancement</h2>
+			<p>A plea for code quality in 43 slides by <a href="https://accessabilly.com">Accessabilly</a>.</p>
+			<figure>
+				<img class="cover" src="pictures/kevin-dooley-evolution-the-ride.jpg" alt="A big lightbulb spiked part of a huge ride saying &quot;Evolution&quot;">
+				<figcaption>
+					Evolution - The Ride, &copy; by <a href="https://www.flickr.com/photos/pagedooley/">Kevin Dooley</a>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section class="slide">
+			<h2>Elevators versus Escalators</h2>
+			<p><strong>When elevators stop working, they are useless.</strong></p>
+			<p><strong>When escalators stop working, they turn into stairs.</strong></p>
+			<figure>
+				<img class="cover" src="pictures/central-station-escalators.jpg" alt="Two spacey looking escalators pointing up to the entrance of the station, one person on the left escalator going up.">
+				<figcaption>
+					Central Station, &copy; by <a href="https://www.flickr.com/photos/stignygaard/3549910164/in/photostream/">Stig Nygaard</a>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section class="slide">
+			<h2>Key Principle</h2>
+			<p><strong>Expect technology to fail and offer a fallback.</strong></p>
+			<p><em>With this principle, people were sent to the moon by the way&hellip;</em></p>
+			<figure>
+				<img class="cover" src="pictures/moon.jpg" alt="Buzz Aldrin on the moon with Landing Capsule in the background and technology experiment in the front.">
+				<figcaption>
+					Buzz Aldrin on the Moon
+				</figcaption>
+			</figure>
+		</section>
+
+		<section class="slide">
+			<h2>3 Myths</h2>
+			<ol>
+				<li>Progressive Enhancement is only for people who <strong>disabled JavaScript</strong> in their browser.</li>
+				<li>Progressive Enhancement means <strong>double development effort</strong>.</li>
+				<li>Progressive Enhancement is only to <strong>support older browsers</strong>.</li>
+			</ol>
+		</section>
+
+		<section class="slide">
+			<h2>&hellip;is only for People who disabled JavaScript in their Browser?</h2>
+			<p>Wrong! Progressive Enhancement is for people,</p>
+			<ul>
+				<li>whose connection is too slow and JavaScript has <strong>not yet been initialized</strong>.</li>
+				<li>whose connection was <strong>interrupted</strong> before JavaScript was finished loading.</li>
+				<li>whose firewall, virus scanner or add-blocker <strong>blocked</strong> JavaScript.</li>
+				<li>who have actually <strong>disabled</strong> JavaScript (about 1.1% - 2% of all internet users).</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<a href="https://twitter.com/wilto/status/515131025387966464"><img class="cover" src="pictures/tweet-matt-marquis.png" alt="Matt Maqrquis on Twitter: “Lots of cool features on the Boston Globe don’t work when JS breaks; “reading the news” is not one of them.”"></a>
+		</section>
+
+		<section class="slide">
+			<h2>&hellip;is only to support older Browsers?</h2>
+			<p>Wrong! The exact opposite is true.</p>
+			<ul>
+				<li>It <strong>reduces the testing effort</strong> in all browsers, because fallbacks are already built in.</li>
+				<li>It makes the website <strong>future-proof</strong>, i.e. also executable for newer browsers and devices.</li>
+				<li>It <strong>works in all browsers</strong>, while e.g. a pure JavaScript framework can only be as good as the browser behind it.</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<a href="https://twitter.com/arnauddelafosse/status/982700804095270912"><img class="cover" src="pictures/ethan-marcotte-device-agnostic.jpg" alt="Arnaud Delafosse on Twitter: “A well-crafted responsive design is device-agnostic.” Photo of a talk by Ehtan Marcotte"></a>
+			<small>Ethan Marcotte talking about &quot;Device Agnostics&quot;, &copy; Arnaud Delafosse</small>
+		</section>
+
+		<section class="slide">
+			<h2>&hellip;means double Development Effort?</h2>
+			<p>Wrong!</p>
+			<ul>
+				<li>This is only true if you have <strong>not planned it in advance</strong> and try to implement it later.</li>
+				<li>In the context of Universal Javascript we have the advantage that server and client can deliver (almost) <strong>identical states</strong> of the app, so this means <strong>basically one effort for two worlds</strong>.</li>
+				<li>A little more effort is required in conception and programming, the cost-benefit calculation is not always simple and obvious, but adds up to a <strong>great gain in user-friendliness and user acceptance</strong>, especially in the long run.</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<a href="https://twitter.com/heydonworks/status/926397784261120001"><img class="cover" src="pictures/heydon-pickering-cross-browser-compatibility.png" alt="Heydon Pickering on Twitter: “The answer to cross-browser compatibility is not “use a lib”. It&apos;s progressive enhancement + testing and fixing.”"></a>
+		</section>
+
+		<section class="slide">
+			<h2>It's all about Usability</h2>
+			<p>It's about improving the <strong>user experience</strong> until certain JavaScript kicks in. The application can provide a bad-looking interface as long as JavaScript is not available, but the user still gets something from the server and can <strong>execute the basic functionality</strong>.</p>
+		</section>
+
+		<section class="slide">
+			<h2>Many Truths</h2>
+			<p>Progressive Enhancement is also about</p>
+			<ul class="flexlist">
+				<li><strong>Usability</strong></li>
+				<li><strong>Accessibility</strong></li>
+				<li><strong>Performance</strong></li>
+				<li><strong>Resilience</strong></li>
+				<li><strong>Fault Tolerance</strong></li>
+				<li><strong>Range</strong></li>
+				<li><strong>Device Agnostics</strong></li>
+				<li><strong>Future Viability</strong></li>
+				<li><strong>Separation of Concerns</strong></li>
+				<li><strong>Frontend Architecture</strong></li>
+			</ul>
+
+		</section>
+
+		<section class="slide">
+			<h2>Who's doing it, too?</h2>
+			<ul>
+				<li>Google</li>
+				<li>gov.uk</li>
+				<li>Shopify</li>
+				<li>Filament Group</li>
+				<li>BBC News</li>
+				<li>The New York Times</li>
+				<li>The Boston Globe</li>
+				<li>etc.</li>
+			</ul>
+			<img class="cover" src="pictures/progressive-enhancer-logos.png" alt="">
+		</section>
+
+		<section class="slide">
+			<h2>3 Steps</h2>
+			<ol>
+				<li>Identify the <strong>key functionality</strong> of the feature you want to implement.</li>
+				<li>Provide this functionality with the <strong>simplest technology</strong>.</li>
+				<li><strong>Enhance!</strong></li>
+			</ol>
+		</section>
+
+		<section class="slide">
+			<h2>Daily Life Example: Collapsible</h2>
+			<p>&quot;As a User of your website, I want to be able to hide content and display it with an interaction to avoid being overloaded with all content at once.&quot;</p>
+		</section>
+
+		<section class="slide">
+			<h2>Identify the Core Functionality</h2>
+			<p>Content should always be able to be displayed and should not be hidden even if JavaScript is not available.</p>
+		</section>
+
+
+		<section class="slide">
+			<h2>Core Functionality in <abbr title="Hypertext Markup Language">HTML</abbr></h2>
+			<pre><code class="html">&lt;h2&gt;&lt;a href=&quot;#content&quot; id=&quot;#trigger&quot;&gt;
+ This is some cool content
+&lt;/a&gt;&lt;/h2&gt;
+&lt;p id=&quot;content&quot;&gt;Why pamper life&#39;s complexity.
+Where there&#39;s music and there&#39;s people. This charming man.
+&quot;Throw your skinny body down, son!&quot;.
+And if a double-decker bus. The last night of the fair.
+Driving in your car. Take me out tonight.&lt;/p&gt;</code></pre>
+			<a href="https://codepen.io/martin-mengele/pen/LrBoNr">Demo 1 on Codepen</a>
+		</section>
+
+		<section class="slide">
+			<h2>Additional Functionality in <abbr title="Cascading Style Sheets">CSS</abbr></h2>
+			<pre><code class="css">p {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+html.no-js p, p:target, p.show {
+  overflow: auto;
+  max-height: 15rem;
+}</code></pre>
+			<a href="https://codepen.io/martin-mengele/pen/vrawGv">Demo 2 on Codepen</a>
+		</section>
+
+		<section class="slide">
+			<h2>Enhanced Functionality with JavaScript</h2>
+			<pre><code class="javascript">const trigger = document.getElementById('trigger');
+const content = document.getElementById('content');
+trigger.addEventListener('click', function(event) {
+  event.preventDefault();
+  content.classList.toggle('show');
+}, false);</code></pre>
+			<a href="https://codepen.io/martin-mengele/pen/MXBdvm">Demo 3 on Codepen</a>
+		</section>
+
+		<section class="slide">
+			<h2>3 Layers</h2>
+			<ol>
+				<li>Semantic <abbr title="Hypertext Markup Language">HTML</abbr></li>
+				<li><abbr title="Cascading Style Sheets">CSS</abbr></li>
+				<li>JavaScript</li>
+			</ol>
+		</section>
+
+		<section class="slide">
+			<h2><abbr title="Hypertext Markup Language">HTML</abbr> - Base Layer</h2>
+			<figure>
+				<img class="cover" src="pictures/cake1.png" alt="Bake a cake - the cake ground.">
+				<figcaption>
+					Forming the cake ground. &copy; by <a href="https://www.youtube.com/channel/UC3veYmZxgb16s_VTm4e77fQ">Baking Day</a>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section class="slide">
+			<h2><abbr title="Hypertext Markup Language">HTML</abbr> - Base Layer</h2>
+			<ul>
+				<li><abbr title="Hypertext Markup Language">HTML</abbr> is completely <strong>error-tolerant</strong>, does not crash or return any error messages.</li>
+				<li>It basically <strong>works on all devices</strong> and all browsers!</li>
+				<li>Elements that are not (yet) known follow the principle of "<strong>Graceful Degradation</strong>".</li>
+				<li>Semantic <abbr title="Hypertext Markup Language">HTML</abbr> already provides <strong>many desired functions</strong> and interactivity, e.g. links (!), buttons, forms (validation, interaction, date picker).</li>
+				<li><abbr title="Hypertext Markup Language">HTML</abbr> provides <strong>basic accessibility</strong> already.</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Graceful Degradation</h2>
+			<img src="pictures/graceful-degradation.png" alt="Graceful Degradation explained: &lt;input type=&quot;date&quot;&gt; in modern browsers like Chrome still working as &lt;input type=&quot;text&quot;&gt; in older browsers like IE11.">
+		</section>
+
+		<section class="slide">
+			<h2>Graceful Degradation</h2>
+			<p>This is a <abbr title="Hypertext Markup Language">HTML</abbr> inherent principle of <strong>fault tolerance</strong> that describes the ability of maintaining functionality when portions of a system break down.</p>
+			<p>Referring to the slide before, an <code>&lt;input type=&quot;date&quot;&gt;</code> in modern browsers like Chrome is still working as <code>&lt;input type=&quot;text&quot;&gt;</code> in older browsers like <abbr title="Internet Explorer">IE</abbr>11.</p>
+		</section>
+
+		<section class="slide">
+			<h2><abbr title="Cascading Style Sheets">CSS</abbr> - Presentation Layer</h2>
+			<figure>
+				<img class="cover" src="pictures/cake2.png" alt="Bake a cake - the cake icing.">
+				<figcaption>
+					Icing the cake. &copy; by <a href="https://www.youtube.com/channel/UC3veYmZxgb16s_VTm4e77fQ">Baking Day</a>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section class="slide">
+			<h2><abbr title="Cascading Style Sheets">CSS</abbr> - Presentation Layer</h2>
+			<ul>
+				<li><abbr title="Cascading Style Sheets">CSS</abbr> is <strong>largely error-tolerant</strong>.</li>
+				<li>Fallbacks are always possible, because <strong>unknown properties are simply ignored</strong>.</li>
+				<li>Progressive Enhancment is <strong><abbr title="Cascading Style Sheets">CSS</abbr>-inherent</strong> (already built-in): with <code>@media</code> or <code>@supports</code> queries.</li>
+				<li>Since <abbr title="Cascading Style Sheets">CSS</abbr>3 a lot of <strong>interactive functionality</strong> is already implemented: see Collapsible with the <code>:target</code>-Selector, form validation, animations etc.</li>
+				<li><strong>Responsive Design</strong>, especially in conjunction with the <strong>Mobile First</strong> approach, is in itself Progressive Enhancement.</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<a href="https://twitter.com/heydonworks/status/605618524023885824"><img class="cover" src="pictures/heydon-pickering-progressive-enhancement-not-about-js.png" alt="Heydon Pickering on Twitter: Another common misunderstanding is that progressive enhancement is just about js - it's not"></a>
+		</section>
+
+		<section class="slide">
+			<h2>Example 1 for Progressive Enhancement in <abbr title="Cascading Style Sheets">CSS</abbr></h2>
+			<pre><code class="css">p {
+  background-color: #000000;
+  background-color: rgba(0,0,0,0.5);
+  color: #ffffff;
+}
+</code></pre>
+		</section>
+
+		<section class="slide">
+			<h2>Example 2 for Progressive Enhancement in <abbr title="Cascading Style Sheets">CSS</abbr></h2>
+			<pre><code class="css">.box {
+  float: left;
+}
+@supports (display: grid) {
+  .box {
+    display: grid;
+  }
+}</code></pre>
+		</section>
+
+		<section class="slide">
+			<h2>JavaScript - Interaction Layer</h2>
+			<figure>
+				<img class="cover" src="pictures/cake3.png" alt="Bake a cake - the decoration.">
+				<figcaption>
+					The final cake decoration. &copy; by <a href="https://www.youtube.com/channel/UC3veYmZxgb16s_VTm4e77fQ">Baking Day</a>
+				</figcaption>
+			</figure>
+		</section>
+
+		<section class="slide">
+			<h2>JavaScript - Interaction Layer</h2>
+			<ul>
+				<li>JavaScript is the weakest link in the chain because it is not <strong>fault-tolerant</strong>, at all!</li>
+				<li>Javascript requires relatively <strong>high processing power</strong> in the browser.</li>
+				<li>Between the browsers there are <strong>different versions of Javascript</strong> with different API support.</li>
+				<li>JavaScript is powerful, so it is there to <strong>enrich and improve</strong> functionality.</li>
+				<li>Javascript <strong>enables accessibility</strong> of the <abbr title="User Interface">UI</abbr>: tablist, combo box, dynamically loaded content etc. only work with it.</li>
+				<li>JavaScript can help to make the website <strong>available offline</strong>, e.g. Service Workers, LocalStorage etc.</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>JavaScript last - but why?</h2>
+			<p><abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript are loaded in parallel and asynchronously, but rendered in this order:</p>
+			<ol>
+				<li>Rendering the <abbr title="Hypertext Markup Language">HTML</abbr> to the DOM Tree</li>
+				<li>Layout of the DOM tree using <abbr title="Cascading Style Sheets">CSS</abbr>, Paint of the DOM</li>
+				<li>JavaScript is executed if it is loaded</li>
+			</ol>
+			<p>Only now, in client-side apps <strong>event handlers</strong> can be executed, <strong><abbr title="JavaScript Object Notation">JSON</abbr> <abbr title="Application Programming Interface">API</abbr> calls</strong> (Ajax, routing, etc.) are executed and content can be <strong>changed dynamically</strong>.</p>
+		</section>
+
+		<section class="slide">
+			<a href="https://twitter.com/jaffathecake/status/207096228339658752"><img class="cover" src="pictures/jake-archibald-non-javascript-users.png" alt="Jake Archibald on Twitter: “We don't have any non-JavaScript users” No, all your users are non-JS while they're downloading your JS"></a>
+		</section>
+
+		<section class="slide">
+			<h2>Time to Interactive - a Milestone in User Experience Lifecycle</h2>
+			<p>Pure client apps require the <strong>entire loading</strong> of the JavaScript bundle before interaction can take place.</p>
+			<p>Users are struggling with non-working buttons or even links. Sometimes they are offered just a <strong>white page</strong>, when trying to interact with the site, only because JavaScript is not already executed.</p>
+			<p>Can't we do better than that?</p>
+		</section>
+
+		<section class="slide">
+			<a href="https://twitter.com/philhawksworth/status/990890920672456707"><img class="cover" src="pictures/phil-hawksworth-no-js.png" alt="Phil Hawksworth on Twitter: Our monitoring tells us that around 1% of requests for JavaScript on BuzzFeed timeout. That's around 13 million requests per month."></a>
+		</section>
+
+		<section class="slide">
+			<h2>The Browser as an Operating System - A dangerous Paradigm</h2>
+			<p>We use the browser as <strong>operating system</strong> for our web app with JavaScript as kernel. JavaScript is used to perform important basic browser functions such as content fetching, routing, etc. JavaScript can become a <strong>bottleneck</strong> or may fail due to errors.</p>
+			<p>We should rather work <strong>with the browser than against</strong> it. This means, letting the browser do the stuff it is built for. JavaScript can do powerful things, but it can destroy the browser inherit user experience, easily.</p>
+		</section>
+
+		<section class="slide">
+			<h2>Some Solutions to faster Time to Interactive</h2>
+			 <ul>
+				<li><strong>Server-side rendering</strong> of the <abbr title="Hypertext Markup Language">HTML</abbr> framework</li>
+				<li><strong>Deeplinking with GET-parameters</strong> for certain states of a site like edit mode, form states, paginations etc.</li>
+				<li>Real <strong>submit buttons</strong>, which can also send forms without JavaScript.</li>
+				<li><strong>Hash links</strong> as "openers" for collapsibles, photo galeries, tab lists etc.</li>
+				<li><abbr title="Hypertext Markup Language">HTML</abbr>5 <strong>form validation</strong></li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Agile Principles ❤ Progressive Enhancement</h2>
+			<p>Progressive Enhancement is a method in (frontend) software development and follows </strong>agile principles</strong>:</p>
+			 <ul>
+				<li>Principle of early and <strong>continuous delivery</strong> of functioning software</li>
+				<li>Principle of <strong>continuous refactoring</strong> (= enhancement!)</li>
+				<li>Simplicity is essential = <strong>KISS principle</strong> ("Keep it simple, smarty!")</li>
+				<li>Constant focus on <strong>technical excellence</strong> and good design</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<a href="https://twitter.com/codepo8/status/568064096626565120"><img class="cover" src="pictures/chris-heilmann-progressive-enhancment.png" alt="Chris Heilmann on Twitter: Progressive Enhancement is not about JavaScript availability - it is about planning your products and delivering."></a>
+		</section>
+
+		<section class="slide">
+			<h2>Examples of little Enhancements in standard Web Projects</h2>
+			 <ul>
+			 	<li><strong>Prefetching &amp; preloading</strong> content</li>
+				<li>Enhanced <strong>font loading</strong></li>
+				<li><strong>Lazy loading</strong> images, videos, audio.</li>
+				<li><strong>Service Workers</strong> for offline usage</li>
+				<li><strong>Telephone numbers</strong> can be linked <code>&lt;a href=&quot;tel:012345&quot;&gt;</code> in devices with telephone functionality (user agent sniffing).</li>
+				<li>Rendering a <strong>"Print" button</strong> only if Javascript is enabled, otherwise it's not working.</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2 class="shout shrink">Thank y'all!</h2>
+		</section>
+
+		<section class="slide">
+			<h2>Sites that inspired this talk heavily</h2>
+			 <ul>
+				<li>Jake Archibald: <a href="https://jakearchibald.com/2013/progressive-enhancement-still-important/">Progressive enhancement is still important</a></li>
+			 	<li>Tiffany Tse: <a href="https://www.shopify.com/partners/blog/what-is-progressive-enhancement-and-why-should-you-care">What is Progressive Enhancement and Why Should You Care?</a></li>
+				<li>Craig Buckler : <a href="https://www.sitepoint.com/javascript-dependency-backlash-myth-busting-progressive-enhancement/">The JavaScript-Dependency Backlash: Myth-Busting Progressive Enhancement</a></li>
+				<li>Julien Etienne: <a href="https://medium.com/@julienetienne/define-graceful-degradation-progressive-enhancement-faf242a8ed51">Define Graceful Degradation & Progressive Enhancement</a></li>
+				<li>Aaron Gustafson: <a href="https://www.aaron-gustafson.com/notebook/insert-clickbait-headline-about-progressive-enhancement-here/">[Insert Clickbait Headline About Progressive Enhancement Here]</a></li>
+				<li>M⁠ath​ias Sc​hä⁠fer: <a href="https://molily.de/single-page-apps/">Progressive Enhancement for JavaScript web apps</a></li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>More Sites that inspired this talk heavily</h2>
+			 <ul>
+				<li>Heydon Pickering: <a href="https://www.smashingmagazine.com/2015/12/reimagining-single-page-applications-progressive-enhancement/">Reimagining Single-Page Applications With Progressive Enhancement</a></li>
+				<li>Robin Whittleton: <a href="https://gdstechnology.blog.gov.uk/2016/09/19/why-we-use-progressive-enhancement-to-build-gov-uk/">Why we use progressive enhancement to build GOV.UK</a></li>
+				<li>gov.uk Guideline: <a href="https://www.gov.uk/service-manual/technology/using-progressive-enhancement">Using progressive enhancement </a></li>
+				<li>Baking Chanel: <a href="https://www.youtube.com/watch?v=zhhwRTkYze0">Pastel Mundo de Caramelo</a>
+			</ul>
+		</section>
+
+	</main>
+
+	<footer class="badge">
+		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+	</footer>
+
+	<div class="progress"></div>
+
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2018 Yours Truly, Famous Inc. -->
+
 </body>
 </html>
