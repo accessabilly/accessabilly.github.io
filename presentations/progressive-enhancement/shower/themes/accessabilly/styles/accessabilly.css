@@ -1,0 +1,163 @@
+/* accssabilly overrides */
+
+.shower {
+  font: 2rem 'Roboto Regular', sans-serif;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.caption h1, .caption p {
+  color: var(--color-black);
+}
+
+.slide {
+    padding: 3rem 3rem 0 3rem;
+}
+
+.slide h2 {
+  font: 3rem 'Roboto Bold', sans-serif;
+  margin-bottom: 1.5rem;
+  line-height: 1.25;
+  color: #000000;
+  display: table;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.slide a {
+  display: inline-block;
+  color: var(--color-accessabilly-darkblue);
+}
+
+.slide a:focus img {
+  outline: 3px solid var(--color-accessabilly-darkblue);
+}
+
+.slide p {
+  font: 1.5rem 'Roboto Regular', sans-serif;
+  line-height: 1.75;
+  display: table;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.slide em {
+  font: 1rem 'Roboto Light', sans-serif;
+  font-style: italic;
+}
+
+.slide strong {
+  display: inline-block;
+  font-weight: 400;
+  background-color: #EB007D;
+  color: #ffffff;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-shadow: none;
+}
+
+.slide ol {
+  padding-left: 2rem;
+
+}
+.slide ul {
+  padding-left: 1.25rem;
+}
+
+.slide ul.flexlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+}
+
+.slide ul.flexlist li {
+  margin-right: 1rem;
+  margin-bottom: 1.25rem;
+  list-style-type: none;
+}
+
+.slide ul.flexlist > li:before {
+  content: '';
+  display: none;
+}
+
+.slide li {
+  font: 1.5rem 'Roboto Regular', sans-serif;
+  line-height: 1.75;
+  margin-bottom: 0.25rem;
+}
+
+.slide small {
+  position: absolute;
+  bottom: 1rem;
+  right: 3rem;
+  font-size: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.slide pre {
+  margin-top: 0;
+  padding: 0;
+}
+
+.slide figcaption {
+  position: absolute;
+  font: 0.75rem 'Roboto Light', sans-serif;
+  bottom: 1rem;
+  right: 3rem;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.slide figcaption a {
+  color: #000000;
+}
+
+.slide pre code {
+  font-size: 1.25rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  line-height: 1.5;
+  background-color: #23241f;
+}
+
+.slide:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 2rem;
+  width: 4rem;
+  height: 2rem;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #595959;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.slide .shout::after {
+  background-color: var(--color-accessabilly-blue);
+  background-image: var(--diagonal);
+}
+
+.slide .shout {
+  color: #000000;
+  text-shadow: none;
+}
