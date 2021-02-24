@@ -1,0 +1,176 @@
+/* || General setup */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+  background-color: #a9a9a9;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  padding: 2rem 5rem;
+  margin: 0 auto;
+}
+
+/* || typography */
+
+h1, h2, h3 {
+  font-family: 'Sonsie One', cursive;
+  color: #2a2a2a;
+}
+
+p, input, li {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+a:focus,
+button:focus,
+input:focus {
+  outline: 0.25rem solid currentColor;
+}
+
+a {
+  color: #000000;
+}
+
+/* || header layout */
+
+nav, article, aside, footer {
+  background-color: white;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  min-height: 5rem;
+  margin-bottom: 1rem;
+  background-color: #ff80ff;
+}
+
+nav {
+  display: flex;
+  width: 70%;
+  background: transparent;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+input {
+  font-size: 1.6rem;
+  min-height: 2rem;
+  padding: 1rem;
+}
+
+input[type="search"] {
+  flex: 3;
+  color: #000000;
+}
+
+button[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+  font-size: 1.6rem;
+  min-height: 2rem;
+  padding: 1rem;
+}
+
+/* || main layout */
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+
+main {
+  width: 75%;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 1rem;
+  background-color: #ff80ff;
+}
+
+aside li {
+  padding-bottom: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+/* helpers */
+
+.invisible {
+  position: absolute;
+  top: -0.0625rem;
+  left: -0.0625rem;
+  overflow: hidden;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
+  color: #000000;
+  background-color: #ffffff;
+}
