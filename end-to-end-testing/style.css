@@ -1,13 +1,13 @@
 /* || General setup */
 
 html, body {
+  font-size: 100%;
   margin: 0;
   padding: 0;
 }
 
 html {
-  font-size: 1rem;
-  background-color: #a9a9a9;
+  background-color: #ffcc33;
 }
 
 body {
@@ -15,23 +15,30 @@ body {
 }
 
 .container {
-  padding: 2rem 5rem;
+  padding: 1rem;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 48rem) {
+  .container {
+    padding: 2rem 5rem;
+  }
 }
 
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Sonsie One', cursive;
+  font-family: 'Pacifico', cursive;
   color: #2a2a2a;
 }
 
-p, input, li {
+p, input, li, small {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
 
 h1 {
+  margin-top: 1rem;
   font-size: 4rem;
 }
 
@@ -66,20 +73,35 @@ nav, article, aside, footer {
 }
 
 header {
-  display: flex;
   min-height: 5rem;
   margin-bottom: 1rem;
-  background-color: #ff80ff;
+  padding-bottom: 2rem;
+  background-color: #1ea0d6;
+}
+
+@media screen and (min-width: 48rem) {
+  header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
 }
 
 nav {
-  display: flex;
-  width: 70%;
   background: transparent;
+}
+
+@media screen and (min-width: 48rem) {
+  nav {
+    display: flex;
+
+    width: 70%;
+  }
 }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
   flex: 2;
@@ -92,34 +114,46 @@ nav li {
 }
 
 nav a {
-  display: inline-block;
+  display: block;
   font-size: 2rem;
-  text-transform: uppercase;
+  padding: 0.5rem 1rem;
   text-decoration: none;
+  font-weight: bold;
   color: black;
+  white-space: nowrap;
 }
 
 form {
-  flex: 1;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   height: 100%;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 64rem) {
+  form {
+    flex-wrap: nowrap;
+  }
 }
 
 input {
-  font-size: 1.6rem;
+  width: 100%;
   min-height: 2rem;
-  padding: 1rem;
+  padding: 0.75rem;
+  font-size: 1.6rem;
+  color: #000000;
+  border: 2px solid #000000;
 }
 
-input[type="search"] {
-  flex: 3;
-  color: #000000;
+@media screen and (min-width: 64rem) {
+  input {
+    min-width: 60%;
+  }
 }
 
 button[type="submit"] {
-  flex: 1;
-  margin-left: 1rem;
+  width: 100%;
   background: #333;
   border: 0;
   color: white;
@@ -131,13 +165,26 @@ button[type="submit"] {
 /* || main layout */
 
 .wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: no-wrap;
+  display: block;
+  background: deeppink;
+}
+
+@media screen and (min-width: 48rem) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 main {
-  width: 75%;
+  width: 100%;
+}
+
+@media screen and (min-width: 48rem) {
+  .main {
+    width: 75%;
+  }
 }
 
 article {
@@ -145,9 +192,14 @@ article {
 }
 
 aside {
-  flex: 1;
-  margin-left: 1rem;
-  background-color: #ff80ff;
+  background-color: #1ea0d6;
+}
+
+@media screen and (min-width: 48rem) {
+  .aside {
+    width: 25%;
+    margin-left: 1rem;
+  }
 }
 
 aside li {
