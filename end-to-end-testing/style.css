@@ -1,6 +1,7 @@
 /* || General setup */
 
 html, body {
+<<<<<<< HEAD
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -244,3 +245,230 @@ html, body {
     background-color: #ffffff;
   }
   
+=======
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #ffcc33;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 48rem) {
+  .container {
+    padding: 2rem 5rem;
+  }
+}
+
+/* || typography */
+
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+  color: #2a2a2a;
+}
+
+p, input, li, small {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+a:focus,
+button:focus,
+input:focus {
+  outline: 0.25rem solid currentColor;
+}
+
+a {
+  color: #000000;
+}
+
+/* || header layout */
+
+nav, article, aside, footer {
+  background-color: white;
+  padding: 2rem;
+}
+
+header {
+  min-height: 5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  background-color: #1ea0d6;
+}
+
+@media screen and (min-width: 48rem) {
+  header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
+}
+
+nav {
+  background: transparent;
+}
+
+@media screen and (min-width: 48rem) {
+  nav {
+    display: flex;
+
+    width: 70%;
+  }
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: block;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 64rem) {
+  form {
+    flex-wrap: nowrap;
+  }
+}
+
+input {
+  width: 100%;
+  min-height: 2rem;
+  padding: 0.75rem;
+  font-size: 1.6rem;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+@media screen and (min-width: 64rem) {
+  input {
+    min-width: 60%;
+  }
+}
+
+button[type="submit"] {
+  width: 100%;
+  background: #333;
+  border: 0;
+  color: white;
+  font-size: 1.6rem;
+  min-height: 2rem;
+  padding: 1rem;
+}
+
+/* || main layout */
+
+.wrapper {
+  display: block;
+  background: deeppink;
+}
+
+@media screen and (min-width: 48rem) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+@media screen and (min-width: 48rem) {
+  .main {
+    width: 75%;
+  }
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  background-color: #1ea0d6;
+}
+
+@media screen and (min-width: 48rem) {
+  .aside {
+    width: 25%;
+    margin-left: 1rem;
+  }
+}
+
+aside li {
+  padding-bottom: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+/* helpers */
+
+.invisible {
+  position: absolute;
+  top: -0.0625rem;
+  left: -0.0625rem;
+  overflow: hidden;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
+  color: #000000;
+  background-color: #ffffff;
+}
+>>>>>>> 0389a786958db9b515445d1dfe597462767815b4
