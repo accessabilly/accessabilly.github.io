@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
 
-    <title>My page title</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <title>Inaccssabilly - Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
 
     <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
@@ -15,72 +16,82 @@
 
   <body>
 
-<div class="container">
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Our team</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      
-      <form action="#" method="GET">
-        <label for="search" class="invisible">Search request</label>
-        <input type="search" id="search" name="q">
-        <button type="submit">Search</button>
-      </form>
-      
-    </header>
+    <div class="container">
 
-    
+      <div role="region" aria-label="Skip to content">
+        <a href="#main" class="skiplink">Skip to main content</a>
+        <a href="#search" class="skiplink">Skip to search</a>
 
-  <div class="wrapper">
+      </div>
 
-    <!-- Here is our page's main content -->
-    <main>
+        <header>
 
-      <!-- It contains an article -->
-      <article>
-        <h1>Article heading</h1>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Our team</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <form action="#" method="GET">
+            <label for="search" class="invisible">Search request</label>
+            <input type="search" id="search" name="q">
+            <button type="submit">Search</button>
+          </form>
+          
+        </header>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+        
 
-        <h2>Subsection</h2>
+      <div class="wrapper">
 
-        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+        <!-- Here is our page's main content -->
+        <main id="main">
 
-        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+          <!-- It contains an article -->
+          <article>
+            <h1>Article heading</h1>
 
-        <h2>Another subsection</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
-        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+            <h2>Subsection</h2>
 
-        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
-      </article>
-    </main>
-      
-      <!-- the aside content can also be nested within the main content -->
-      <aside>
-        <h2>Related</h2>
+            <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
 
-        <ul>
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well...</a></li>
-        </ul>
-      </aside>
-  </div>
+            <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
 
-    <!-- And here is our main footer that is used across all the pages of our website -->
+            <h2>Another subsection</h2>
 
-    <footer>
-      <p>© Copyright 2050 by nobody. All rights reversed.</p>
-      <p>The principle idea for this was taken from <a href="https://github.com/mdn/learning-area/tree/master/html/introduction-to-html/document_and_website_structure">MDN's Github repo</a>
-    </footer>
-</div>
-</body>
+            <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+
+            <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+          </article>
+
+        </main>
+          
+          <!-- the aside content can also be nested within the main content -->
+          <aside>
+            <h2>Related</h2>
+
+            <ul>
+              <li><a href="#">Oh I do like to be beside the seaside</a></li>
+              <li><a href="#">Oh I do like to be beside the sea</a></li>
+              <li><a href="#">Although in the North of England</a></li>
+              <li><a href="#">It never stops raining</a></li>
+              <li><a href="#">Oh well...</a></li>
+            </ul>
+          </aside>
+      </div>
+
+        <!-- And here is our main footer that is used across all the pages of our website -->
+
+        <footer>
+          <p>The principle idea for this was taken from <a href="https://github.com/mdn/learning-area/tree/master/html/introduction-to-html/document_and_website_structure">MDN's Github repo</a></p>
+          <small>© Copyright 2050 by nobody. All rights reversed.</small>
+        </footer>
+    </div>
+
+  </body>
 </html>
