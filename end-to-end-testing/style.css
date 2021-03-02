@@ -30,6 +30,7 @@ html, body {
   /* || typography */
   
   h1, h2, h3 {
+    margin-top: 0;
     font-family: 'Pacifico', cursive;
     color: #2a2a2a;
   }
@@ -183,7 +184,6 @@ html, body {
   
   .wrapper {
     display: block;
-    background: deeppink;
   }
   
   @media screen and (min-width: 48rem) {
@@ -196,11 +196,14 @@ html, body {
   
   main {
     width: 100%;
+    margin-bottom: 1rem;
   }
   
   @media screen and (min-width: 48rem) {
-    .main {
+    main {
       width: 75%;
+      margin-right: 1rem;
+      margin-bottom: 0;
     }
   }
   
@@ -213,9 +216,8 @@ html, body {
   }
   
   @media screen and (min-width: 48rem) {
-    .aside {
+    aside {
       width: 25%;
-      margin-left: 1rem;
     }
   }
   

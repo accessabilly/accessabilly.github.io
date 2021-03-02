@@ -8,10 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
 
-    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -21,12 +17,11 @@
       <div role="region" aria-label="Skip to content">
         <a href="#main" class="skiplink">Skip to main content</a>
         <a href="#search" class="skiplink">Skip to search</a>
-
       </div>
 
         <header>
 
-          <nav>
+          <nav aria-label="Main">
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">Our team</a></li>
@@ -35,22 +30,18 @@
             </ul>
           </nav>
           
-          <form action="#" method="GET">
+          <form action="#" method="GET" role="search">
             <label for="search" class="invisible">Search request</label>
             <input type="search" id="search" name="q">
             <button type="submit">Search</button>
           </form>
           
-        </header>
-
-        
+        </header>        
 
       <div class="wrapper">
 
-        <!-- Here is our page's main content -->
         <main id="main">
 
-          <!-- It contains an article -->
           <article>
             <h1>Article heading</h1>
 
@@ -70,27 +61,25 @@
           </article>
 
         </main>
-          
-          <!-- the aside content can also be nested within the main content -->
-          <aside>
-            <h2>Related</h2>
 
-            <ul>
-              <li><a href="#">Oh I do like to be beside the seaside</a></li>
-              <li><a href="#">Oh I do like to be beside the sea</a></li>
-              <li><a href="#">Although in the North of England</a></li>
-              <li><a href="#">It never stops raining</a></li>
-              <li><a href="#">Oh well...</a></li>
-            </ul>
-          </aside>
+        <aside>
+          <h2>Related</h2>
+          <ul>
+            <li><a href="#">Oh I do like to be beside the seaside</a></li>
+            <li><a href="#">Oh I do like to be beside the sea</a></li>
+            <li><a href="#">Although in the North of England</a></li>
+            <li><a href="#">It never stops raining</a></li>
+            <li><a href="#">Oh well...</a></li>
+          </ul>
+        </aside>
+
       </div>
 
-        <!-- And here is our main footer that is used across all the pages of our website -->
+      <footer aria-label="Legal stuff">
+        <p>The principle idea for this was taken from <a href="https://github.com/mdn/learning-area/tree/master/html/introduction-to-html/document_and_website_structure">MDN's Github repo</a></p>
+        <small>© Copyright 2050 by nobody. All rights reversed.</small>
+      </footer>
 
-        <footer>
-          <p>The principle idea for this was taken from <a href="https://github.com/mdn/learning-area/tree/master/html/introduction-to-html/document_and_website_structure">MDN's Github repo</a></p>
-          <small>© Copyright 2050 by nobody. All rights reversed.</small>
-        </footer>
     </div>
 
   </body>
