@@ -23,7 +23,7 @@
 
           <nav aria-label="Main">
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="#" id="home">Home</a></li>
               <li><a href="#">Our team</a></li>
               <li><a href="#">Projects</a></li>
               <li><a href="#">Contact</a></li>
@@ -33,7 +33,7 @@
           <form action="#" method="GET" role="search">
             <label for="search" class="invisible">Search request</label>
             <input type="search" id="search" name="q">
-            <button type="submit">Search</button>
+            <button type="submit" class="search">Search</button>
           </form>
           
         </header>        
@@ -71,16 +71,28 @@
             <li><a href="#">It never stops raining</a></li>
             <li><a href="#">Oh well...</a></li>
           </ul>
+
+          <h2>Settings</h2>
+          <button type="button" aria-expanded="false" aria-controls="settings" class="settings">Access keys</button>
+          <div id="settings" class="collapsible" aria-hidden="false">
+            <p>Accesskeys are set to <button type="button" aria-pressed="false" id="switch" class="switch">Off</button></p>
+            <p>When you activate accesskeys, you can access the following via key:</p>
+            <ul>
+              <li>Homepage <kbd>0</kbd></li>
+              <li>Search <kbd>1</kbd></li>
+            </ul>
+          </div>          
         </aside>
 
       </div>
 
       <footer aria-label="Legal stuff">
         <p>The principle idea for this was taken from <a href="https://github.com/mdn/learning-area/tree/master/html/introduction-to-html/document_and_website_structure">MDN's Github repo</a></p>
+        <p>JavaScript was stolen at W3C's <a href="https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-faq.html">disclosure example</a> and <a href="https://www.w3.org/TR/wai-aria-practices/examples/button/js/button.js">button example</a></p>
         <small>© Copyright 2050 by nobody. All rights reversed.</small>
       </footer>
 
     </div>
-
+    <script src="scripts.js"></script>
   </body>
 </html>
